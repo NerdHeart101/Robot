@@ -39,49 +39,6 @@ public class Robot extends SampleRobot
         SmartDashboard.putData("Auto modes", chooser);
     }
 
-    /**
-     * This autonomous (along with the chooser code above) shows how to select
-     * between different autonomous modes using the dashboard. The sendable
-     * chooser code works with the Java SmartDashboard. If you prefer the
-     * LabVIEW Dashboard, remove all of the chooser code and uncomment the
-     * getString line to get the auto name from the text box below the Gyro
-     *
-     * <p>You can add additional auto modes by adding additional comparisons to
-     * the if-else structure below with additional strings. If using the
-     * SendableChooser make sure to add them to the chooser code above as well.
-     *
-     * <p>If you wanted to run a similar autonomous mode with an IterativeRobot
-     * you would write:
-     *
-     * <blockquote><pre>{@code
-     * Timer timer = new Timer();
-     *
-     * // This method is run once each time the robot enters autonomous mode
-     * public void autonomousInit() 
-     * {
-     *     timer.reset();
-     *     timer.start();
-     * }
-     *
-     * // This method is called periodically during autonomous
-     * public void autonomousPeriodic() 
-     * {
-     *     // Drive for 2 seconds
-     *     if (timer.get() < 2.0) 
-     *     {
-     *         myRobot.drive(-0.5, 0.0); // drive forwards half speed
-     *     }
-     *     else if (timer.get() < 5.0) 
-     *     {
-     *         myRobot.drive(-1.0, 0.0); // drive forwards full speed
-     *     }
-     *     else 
-     *     {
-     *         myRobot.drive(0.0, 0.0); // stop robot
-     *     }
-     * }
-     * }</pre></blockquote>
-     */
     @Override
     public void autonomous() 
     {
